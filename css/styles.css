@@ -28,7 +28,11 @@ h2,
 h3,
 h4,
 a {
-    color: #4a4a4a;
+    color: #502e2e;
+}
+
+h2 {
+    text-decoration: underline;
 }
 
 p {
@@ -49,8 +53,8 @@ h3 {
 /* header layout CSS  */
 
 .m-header {
-    margin-bottom: 15px;
-    margin-top: 0;
+    max-width: 90%;
+    margin: 0 auto 15px;
 }
 
 .heading-name {
@@ -84,21 +88,22 @@ h3 {
 
 /* banner layout CSS  */
 
+.banner {
+    max-width: 90%;
+    margin: 5px auto 10px;
+}
 .profile-image-size {
-    width: 70%;
+    width: 80%;
+    border-radius: 10px;
 }
 
 .banner-image {
-    padding: 30px 0;
+    padding: 20px 0;
+
 }
 
 .banner-intro {
     padding:0;
-}
-
-.wrapper1{
-    max-width: 90%;
-    margin: 0 auto;
 }
 
 /* portfolio section CSS  */
@@ -123,10 +128,44 @@ h3 {
     padding: 0;
 }
 
+/* Skills section CSS  */
+
+.skill-details {
+    padding: 40px 40px 50px;
+    margin: 0 auto;
+}
+
+.skill-details li {
+  list-style:square;
+  display:inline-block;
+  border: 1px solid #d4d4d4;
+  font-family: 'Rasa', serif;
+  font-size: 20px;
+  padding: 5px 15px;
+  margin: 5px;
+  color: #674242;
+  background-color: #c2c1c1;
+  border-radius: 30px;
+}
+
+.skill-details p {
+  padding: 0 20px;
+  margin-top: 20px;
+
+}
+
+.skill-details ul{
+  padding-top: 10px;
+}
+
+
 /* Contact section CSS  */
 
 .contact-details {
-    padding: 10px 0;
+
+    padding: 20px;
+    margin: 2px auto;
+    background-color: white;
 
 }
 .contact-details h2, p{
@@ -137,30 +176,187 @@ h3 {
 
 .footer {
     border-top: 0.1px solid #d4d4d4;
-    padding: 20px;
     width: 90%;
-    margin: 40px auto 0;
+    margin: 10px;
+    padding: 10px;
 }
 
-.footer nav {
+.footer-nav {
     display: none;
 }
 
 .footer-name {
     position: absolute;
+    color: #515151;
 }
 
 .footer-tag {
     text-align: right;
+    color: #515151;
 }
 
 .footer-tag a:hover {
       color: #7f7f7f;
 }
 
+/*Media Queries for 768px */
 
-  /*  media Q for 768px */
+@media (min-width: 768px) {
 
-   /*
-   media Q for 1024px
-    */
+/* header section CSS  */
+.main-nav li {
+      display: inline-block;
+  }
+
+.main-nav a {
+    background-color: #fafafa;
+    margin: 0;
+}
+
+.heading-name{
+      margin: 20px 0 5px 0;
+}
+
+/* banner section CSS  */
+
+.banner-image {
+      float: right;
+      padding: 0;
+      margin: auto;
+      width: 40%;
+}
+.profile-image-size {
+    width: 90%;
+}
+
+.banner-intro {
+      text-align: left;
+      margin: auto;
+      padding-right: 10px;
+      padding-left: 10px;
+      float: left;
+      width: 60%;
+}
+
+.banner-intro p {
+    padding: 2px;
+    font-size: 18px;
+}
+
+.banner {
+  padding-bottom: 40px;
+}
+
+.floater{
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.blocks{
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.blocks p {
+  padding: 2px 5px;
+  font-size: 16px;
+}
+
+.footer-tag {
+  display: none;
+}
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.skill-details ul {
+    padding-bottom: 20px;
+}
+
+.skill-details {
+  padding: 50px;
+}
+
+.contact-details p {
+    padding: 40px;
+}
+
+
+.footer {
+    padding: 20px;
+    margin: 30px auto 0;
+}
+
+.footer-nav {
+    display: block;
+
+}
+
+.footer-nav li {
+  display: inline-block;
+  padding: 5px;
+  float: right;
+}
+
+}
+
+ /* media Q for 1024px */
+
+ @media (min-width: 1024px) {
+
+.heading-name {
+  position: absolute;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+.main-nav {
+  float: right;
+  margin: 10px auto;
+}
+
+.m-header {
+  max-width: 1150px;
+  border-bottom: 10px;
+  padding: 20px;
+  margin: 0 auto 5px;
+}
+
+.banner {
+    margin: 5px auto;
+    max-width: 1150px;
+    padding: 10px;
+}
+
+.banner-intro p{
+  font-size: 23px;
+}
+
+.portfolio-details {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 30px;
+}
+.h2-portfolio {
+  padding: 0 10px;
+}
+
+.blocks{
+  max-width: 20%;
+  margin: 20px 65px;
+  padding: 0;
+}
+
+.contact-details {
+  margin: 5px auto;
+  max-width: 1150px;
+}
+
+ }
