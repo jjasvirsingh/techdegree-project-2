@@ -3,6 +3,7 @@
 * {
   	box-sizing: border-box;
 }
+
 li {
     text-decoration: none;
     list-style-type: none;
@@ -11,7 +12,7 @@ li {
 body {
     font-family: 'El Messiri', sans-serif;
   	line-height: 1.4;
-    background-color: #fafafa;
+    background-color: #1d1d2c;
     text-align: center;
 }
 
@@ -24,11 +25,12 @@ h2{
 }
 
 h1,
+a,
 h2,
 h3,
-h4,
-a {
-    color: #502e2e;
+h4
+ {
+    color: #EBA63F;
 }
 
 h2 {
@@ -36,7 +38,7 @@ h2 {
 }
 
 p {
-    color: #7f7f7f;
+    color:#7DA2A9;
     font-family: 'Rasa', serif;
     font-size: 20px;
 }
@@ -61,6 +63,7 @@ h3 {
     margin-top: 20px;
     font-size: 42px;
     font-weight:bold;
+    text-shadow: 0.5px 0.5px 2px #F7F4E9;
 }
 
 .main-nav {
@@ -73,7 +76,11 @@ h3 {
     text-align: center;
     margin-top: 5px;
     padding: 5px 10px;
-    background-color: white;
+}
+
+.main-nav li {
+    background-color: #F7F4E9;
+    border-radius: 10px;
 }
 
 .main-nav a {
@@ -83,7 +90,7 @@ h3 {
 }
 
 .main-nav a:hover {
-    color: #7f7f7f;
+    color: #1d1d2c;
 }
 
 /* banner layout CSS  */
@@ -92,6 +99,7 @@ h3 {
     max-width: 90%;
     margin: 5px auto 10px;
 }
+
 .profile-image-size {
     width: 80%;
     border-radius: 10px;
@@ -99,17 +107,22 @@ h3 {
 
 .banner-image {
     padding: 20px 0;
-
 }
 
 .banner-intro {
     padding:0;
 }
 
+.banner-intro p {
+    color: #c1a754;
+    text-align:center;
+    padding: 10px;
+}
+
 /* portfolio section CSS  */
 
 .portfolio-details {
-    background-color: white;
+    background-color: #F7F4E9;
     padding: 20px 0;
     max-width: 100%;
 }
@@ -136,46 +149,45 @@ h3 {
 }
 
 .skill-details li {
-  list-style:square;
-  display:inline-block;
-  border: 1px solid #d4d4d4;
-  font-family: 'Rasa', serif;
-  font-size: 20px;
-  padding: 5px 15px;
-  margin: 5px;
-  color: #674242;
-  background-color: #c2c1c1;
-  border-radius: 30px;
+    list-style:square;
+    display:inline-block;
+    font-family: 'Rasa', serif;
+    font-size: 20px;
+    padding: 5px 15px;
+    margin: 5px;
+    color: #1D1D2C;
+    background-color: #F7F4E9;
+    border-radius: 30px;
+    box-shadow: 2px 2px 1px 1px #EBA63F,
+                -2px -2px 1px 1px #EBA63F;
 }
 
 .skill-details p {
-  padding: 0 20px;
-  margin-top: 20px;
-
+    padding: 0 20px;
+    margin-top: 10px;
 }
 
 .skill-details ul{
-  padding-top: 10px;
+    padding-top: 10px;
 }
-
 
 /* Contact section CSS  */
 
 .contact-details {
 
     padding: 20px;
-    margin: 2px auto;
-    background-color: white;
-
+    margin: 10px auto;
+    background-color: #F7F4E9;
 }
+
 .contact-details h2, p{
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 /* Footer section CSS  */
 
 .footer {
-    border-top: 0.1px solid #d4d4d4;
+    border-top: 0.1px solid #F7F4E9;
     width: 90%;
     margin: 10px;
     padding: 10px;
@@ -187,7 +199,7 @@ h3 {
 
 .footer-name {
     position: absolute;
-    color: #515151;
+    font-size: 18px;
 }
 
 .footer-tag {
@@ -196,7 +208,7 @@ h3 {
 }
 
 .footer-tag a:hover {
-      color: #7f7f7f;
+      color: #F7F4E9;
 }
 
 /*Media Queries for 768px */
@@ -209,8 +221,13 @@ h3 {
   }
 
 .main-nav a {
-    background-color: #fafafa;
+    background-color: #1d1d2c;
     margin: 0;
+    text-shadow: 0.5px 0.5px 2px #F7F4E9;
+}
+
+.main-nav a:hover {
+    color: #F7F4E9;
 }
 
 .heading-name{
@@ -230,7 +247,6 @@ h3 {
 }
 
 .banner-intro {
-      text-align: left;
       margin: auto;
       padding-right: 10px;
       padding-left: 10px;
@@ -241,53 +257,62 @@ h3 {
 .banner-intro p {
     padding: 2px;
     font-size: 18px;
+    text-align: left;
 }
 
 .banner {
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 
-.floater{
+.floater {
     float: left;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .blocks{
-  width: 40%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 10px;
-  padding: 0;
+    width: 40%;
+    margin: 20px 35px;
+    padding-left: 15px;
 }
 
 .blocks p {
-  padding: 2px 5px;
-  font-size: 16px;
+    padding: 2px 5px;
+    font-size: 16px;
 }
 
-.footer-tag {
-  display: none;
+.portfolio-details {
+    margin: 0 auto;
+    padding: 5px;
 }
+
+/* clearfix class to fix floaters layout  */
 
 .clearfix::after {
-  content: " ";
-  display: table;
-  clear: both;
+    content: " ";
+    display: table;
+    clear: both;
 }
+
+ /* skill section layout  */
 
 .skill-details ul {
     padding-bottom: 20px;
 }
 
 .skill-details {
-  padding: 50px;
+    padding: 50px;
 }
+
+ /* contact section layout  */
 
 .contact-details p {
     padding: 40px;
 }
 
+/* footer section layout  */
+
+.footer-tag {
+    display: none;
+}
 
 .footer {
     padding: 20px;
@@ -311,23 +336,27 @@ h3 {
 
  @media (min-width: 1024px) {
 
+/* header section */
+
 .heading-name {
-  position: absolute;
-  padding: 5px;
-  margin: 0 auto;
+    position: absolute;
+    padding: 5px;
+    margin: 0 auto;
 }
 
 .main-nav {
-  float: right;
-  margin: 10px auto;
+    float: right;
+    margin: 10px auto;
 }
 
 .m-header {
-  max-width: 1150px;
-  border-bottom: 10px;
-  padding: 20px;
-  margin: 0 auto 5px;
+    max-width: 1150px;
+    border-bottom: 10px;
+    padding: 20px;
+    margin: 0 auto 5px;
 }
+
+/* banner section */
 
 .banner {
     margin: 5px auto;
@@ -336,27 +365,41 @@ h3 {
 }
 
 .banner-intro p{
-  font-size: 23px;
+    font-size: 20px;
+    padding: 20px;
 }
 
+/* portfolio section */
+
 .portfolio-details {
-  max-width: 1150px;
-  margin: 0 auto;
-  padding: 30px;
+    max-width: 1150px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    align-items: center;
 }
+
 .h2-portfolio {
-  padding: 0 10px;
+    padding: 0 10px;
 }
 
 .blocks{
-  max-width: 20%;
-  margin: 20px 65px;
-  padding: 0;
+    max-width: 30%;
+    margin: 20px 15px;
 }
 
 .contact-details {
-  margin: 5px auto;
-  max-width: 1150px;
+    margin: 5px auto;
+    max-width: 1150px;
+    border-radius: 5px;
 }
 
- }
+.contact-details p {
+    padding: 20px
+}
+
+.floater {
+    margin: 10px 15px;
+}
+
+}
